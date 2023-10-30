@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/069053fb36.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/M Logo 2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li> 
+                <li><a href="#projects">Projects</a></li> 
+                <li><a href="#certification">Certifications</a></li> 
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>                 
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Mihir Khot</span><br>a passionate</h1>
+            <span id="element"></span>
+        </div>
+</div>
+<!---------------about---------------->>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="images/mihir.png.png">
+        </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A Software Developer with a diverse skill set in Python, Java and JavaScript programming languages. I
+                    possess a broad range of technical competencies in software engineering, data structures and algorithms. I
+                    possess strong interpersonal and teamwork skills. My excellent communication and problem-solving skills have
+                    helped me to establish productive relationships with team members.</p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Java, Python, JavaScript, PHP</li>
+                        <li><span>Frameworks</span><br>CSS, Bootstrap4, Html5, Nodejs</li>
+                        <li><span>Software Engineering</span><br>Data Structures and Algorithms, OOPs Concepts</li>
+                        <li><span>Databases</span><br>MySQL, SQLite, MongoDB</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Aug 2019 - July 2023</span><br>B.E Computer from AC Patil College of Engineering</li>
+                        <li><span>May 2017 - June 2019</span><br>12th Class from PG Junior College (State Board)</li>
+                        <li><span>April 2017</span><br>10th Class at St. Mary's High School (State Board)</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-------------Projects------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-eye"></i>
+                <h2>HCI- Accessible to Disabled</h2>
+                <p>Worked on unimodal and multimodal system to create a model which can control the mouse by the facial gesture and speech of the user. This model is designed to help the physically challenged person.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-tractor"></i>
+                <h2>Farma Buddy</h2>
+                <p>Built using Dreamweaver 8.0, FileZilla and CorelDRAW. An agriculture friendly platform which is a smart farming system providing three services such as crop information, crop care and market play</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-plus"></i>
+                <h2>GATE Simplifier</h2>
+                <p>Built using python programming language and Quine McCluskey technique. Used Quine McCluskey technique for minimizing Boolean expression for n variables without using any boolean algebra theorem.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!----------Certifications--------->
+<div id="certification">
+    <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="certification-list">
+            <div class="certification">
+                <img src="images/PYY2.png">
+                <div class="layer">
+                    <h3>Python for Everybody Specialization</h3>
+                    <p>Basic fundamentals of Python programming</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="certification">
+                <img src="images/WB.png">
+                <div class="layer">
+                    <h3>The Web Developer Bootcamp</h3>
+                    <p>covers tools and technologies including HTML, CSS, java, Bootstrap, DOM
+                        manipulation, NodeJS and database association.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="certification">
+                <img src="images/JS.png">
+                <div class="layer">
+                    <h3>JavaScript Essentials by CISCO Networking Academy</h3>
+                    <p>This course helped to get acquainted with this text based programming language to create interactive mobile
+                        and web applications</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!--------------contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i> mjkhot14@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> Ph No: 9834083145</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/mihirk_"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Mihir Khot. All Rights Reserved | Privacy Policy</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwAhku-M8R2Ey3zA5xzNHiZRjJMaFrFSbytoZerly7n0JEskghSgL-RWi9mSHp7mF-KNA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Java Developer','Web Designer'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>
